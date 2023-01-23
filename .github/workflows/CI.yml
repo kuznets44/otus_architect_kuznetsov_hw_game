@@ -3,6 +3,18 @@ name: HW1 CI
 on: push
 
 jobs:
+  create-envfile:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v1.3
+      with:
+        envkey_HW3_HANDLERS_CONFIG: "handlers.conf"
+        envkey_HW3_EXCEPTIONS_LOG: "exceptions.log"
+        file_name: .env
+        fail_on_empty: false
   buildAndTest:
     runs-on: ubuntu-latest
 
