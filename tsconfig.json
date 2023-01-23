@@ -7,6 +7,10 @@
     "strict": true,
     "sourceMap": true
   },
-  "include": ["src", "test"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.conf",
+    "tests/**/*"
+  ],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
