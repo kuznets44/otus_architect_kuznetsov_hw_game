@@ -1,3 +1,5 @@
+import { ICommand } from "../types";
+
 export class Rotate implements ICommand {
 
   public execute() {

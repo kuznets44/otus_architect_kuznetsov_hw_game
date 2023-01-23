@@ -1,3 +1,5 @@
+import { ICommand } from "./types";
+
 export class CommandRetrier {
   private command : ICommand;
   

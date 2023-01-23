@@ -1,4 +1,6 @@
-export class Queue implements IQueue {
+import { ICommand } from "./types";
+
+export class Queue {
 
   private items : ICommand [] = [];
 
